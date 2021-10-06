@@ -1,0 +1,9 @@
+@import "_generalProperties";
+
+.container{
+   width: 100%;
+
+   .col.TODO{
+      border-right: 2px solid black;
+   }
+}

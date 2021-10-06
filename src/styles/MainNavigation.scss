@@ -1,0 +1,87 @@
+@import "_generalProperties.scss";
+
+header{
+   
+   .navbar{
+      padding: 0 10rem 0 10rem;    
+      position: fixed;
+      max-height: 30vh;
+      
+      .main {
+         font-size: 2.2rem;
+         color: white;
+         font-weight: 900;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+      }
+
+      div {
+         li{
+            margin-right: 20px;
+
+            a{
+               border-radius: 4px;
+               padding: 9px 14px;
+               height: 100%;
+               border: 1px solid white;
+               font-weight: 600;
+               display: block;
+               text-align: center;
+               width: 100%;
+
+               &:hover{
+                  background-color: $lightBlue;
+               }
+               &:active{
+                  background-color: $darkBlue;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media (min-width: 768px) {
+   header{
+   
+      .navbar{
+         padding: 0 1rem 0 1rem;    
+         position: fixed;
+         max-height: 30vh;
+         
+         .main {
+            font-size: 2.2rem;
+            color: white;
+            font-weight: 900;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+         }
+   
+         div {
+            li{
+               margin-right: 20px;
+   
+               a{
+                  border-radius: 4px;
+                  padding: 9px 14px;
+                  height: 100%;
+                  border: 1px solid white;
+                  font-weight: 600;
+                  display: block;
+                  text-align: center;
+                  width: 100%;
+   
+                  &:hover{
+                     background-color: $lightBlue;
+                  }
+                  &:active{
+                     background-color: $darkBlue;
+                  }
+               }
+            }
+         }
+      }
+   }
+   
+}
+

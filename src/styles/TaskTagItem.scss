@@ -1,0 +1,17 @@
+@import "generalProperties";
+
+div.col.tag{
+   margin-bottom: 6px;
+   text-align: center;
+   span.tag{
+      padding: 5px 10px;
+      border-radius: 6px;
+
+      &.red{ background-color: #dc3545; }
+      &.yellow{ background-color: #ffc107; }
+      &.blue{ background-color: #0dcaf0; }
+      &.grey{ background-color: #6c757d; }
+      &.green{ background-color: #198754; }
+      &.purple{ background-color: #8360ac; }
+   }
+}
