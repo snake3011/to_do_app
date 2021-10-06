@@ -1,5 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { collection, addDoc, updateDoc, doc } from "firebase/firestore";
+import toast, { Toaster } from 'react-hot-toast';
 
 import CreateTaskForm from "../Tasks/CreateTaskForm";
 import db from "../../db/firebaseConfig";
@@ -30,9 +31,12 @@ function CreateTask() {
             });
          };
 
-         insertData();      
-         // back to main page
-         history.replace("/");
+         insertData().then(() => {
+            toast.success('Task created!');
+            // back to main page
+            history.replace("/");
+         });      
+         
       } catch (e) {
          console.error(e);
       }
@@ -76,6 +80,9 @@ function CreateTask() {
 
    return (
       <section>
+         <div><Toaster
+            position="top-right"
+         /></div>
          <h2 className="textBig">CREATE TASK <br /> <hr /></h2>
          
          <CreateTaskForm onAddTask={addTaskHandler}></CreateTaskForm>

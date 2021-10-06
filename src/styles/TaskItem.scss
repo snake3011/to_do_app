@@ -9,6 +9,29 @@
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
       font-weight: bold;
+      display: flex;
+      align-items: center;
+      flex-grow: column wrap;
+      justify-content: space-between;
+
+      button{
+         border: none;
+         background-color: transparent;
+
+         i{
+            color: #fa1010fb;
+            text-align: left;
+            font-size: 1.3em;
+         }
+
+         &:hover{
+            i{
+               color: #fa1010c7;
+            }        
+         }
+      }
+      
+      
    }
 
    .card-body{

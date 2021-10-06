@@ -17,6 +17,7 @@ function TaskListDone(props) {
                      date={task.date}
                      isDone={task.isDone}
                      changeTaskState={props.changeTaskState}
+                     deleteTask={props.deleteTask}
                   ></TaskItem>
                );
             }

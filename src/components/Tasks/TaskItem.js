@@ -8,12 +8,18 @@ function TaskItem(props) {
       props.changeTaskState(props.task);
    }
 
+   function deleteTaskHandler() {
+      props.deleteTask(props.task);
+   }
+
    return (
       <li>
          <div className="card">
             {/* HEADER */}
             <div className="card-header">
-               <h5 className="card-title">{props.title}</h5>
+               <h5 className="card-title">{props.title} </h5>
+
+               <button onClick={deleteTaskHandler}><i className="fas fa-trash-alt"></i></button>
             </div>
 
             {/* BODY */}
